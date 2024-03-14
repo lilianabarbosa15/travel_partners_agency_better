@@ -1,0 +1,42 @@
+main {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "aside article"
+        "footer footer";
+    grid-template-columns: 0fr 3fr;
+}
+
+header { /**/
+    text-align: center;
+    background-color: rgba(173, 213, 240, 0.67);
+    font-size: 70px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+    grid-area: header;
+}
+
+nav { /**/
+    text-align: justify;
+    background-color: rgba(200, 217, 253, 0.664);
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    grid-area: nav;
+}
+
+article { /**/
+    text-align: justify;
+    padding: 0 2.5em;
+    background-color: rgba(255, 230, 230, 0.67);
+    grid-area: article;
+}
+
+footer{ /**/
+    text-align: center;
+    background-color: rgba(235, 233, 133, 0.48);
+    font-weight: bold;
+    grid-area: footer;
+}
