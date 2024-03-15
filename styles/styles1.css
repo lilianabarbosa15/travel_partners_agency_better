@@ -1,50 +1,134 @@
 main {
     display: grid;
     grid-template-areas:
-        "header header"
-        "nav nav"
-        "aside article"
-        "footer footer";
+        "header header header"
+        "nav nav nav"
+        "aside article article"
+        "footer footer footer";
     grid-template-columns: 1fr 3fr;
 }
-
-header { /**/
+/*Organización de HEADER*/
+main > header {
+    background-image: url(../images/Imaportada1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
-    background-color: rgba(173, 213, 240, 0.67);
-    font-size: 70px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: italic;
-    font-weight: bold;
+    font: 200 70px/1.3 'Berkshire Swash', "Sofia", sans-serif;
+    color: whitesmoke;
+    text-shadow: 1px 1px 0px #2e1f1f, 4px 4px 0px rgba(0,0,0,0.15);
+    padding: 100px;
     grid-area: header;
 }
-
-nav { /**/
-    text-align: center;
-    background-color: rgba(200, 217, 253, 0.664);
-    font-size: 25px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    grid-area: nav;
+header > p {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 0px #2e1f1f, 4px 4px 0px rgba(0,0,0,0.15);
 }
-
-aside { /**/
+/*Organización de Barra principal*/
+nav {
+    display:grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background: aliceblue;
+    opacity: 0.8;
+    font-family: serif;
+    font-size: 14px;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+nav .logo{
+    font-size: 16px;
+    margin-left: 10px;
+}
+nav .barrnav{ margin-right: 10px; }
+nav > div > ul > li > a{
+    text-decoration: none;
+    margin: 10px;
+}
+nav > div > ul{
+    grid-template-columns: repeat(6,auto);
+    margin-right: 10px;
+}
+nav > div > ul > li {
+    list-style-type: none;
+    display: inline-block;
+}
+nav .barrnav ul>li:hover{ background:rgb(168, 202, 233); }
+/*Organización de ARCTICLE (con info de turismo)*/
+article {
+    padding: 0 2.5em;
+    background-color: rgba(255, 230, 230, 0.67);
+    grid-area: article;
+}
+ul.destinos {
+    display:grid;
+    list-style-type: none;
+    grid-template-columns: repeat(3,2fr);
+    grid-template-rows: repeat(4,2fr);
+}
+ul.destinos > li {
+    display: block;
+    text-align: center;
+    padding: 6%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+ul.destinos > li > a{
+    color:transparent;
+    text-decoration: none;    
+}
+ul.destinos > li:hover{
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.3);
+}
+ul.destinos > li:hover > a{
+    color: white;
+}
+#bali_info{
+    grid-column: 1;
+    grid-row: 1;
+    background-image: url(../images/Bali.jpg);
+}
+#paris_info{
+    grid-column: 3;
+    grid-row: 1;
+    background-image: url(../images/Paris.jpg);
+}
+#tanzania_info{
+    grid-column: 2;
+    grid-row: 2;
+    background-image: url(../images/Tanzania.jpg);
+}
+#ny_info{
+    grid-column: 1;
+    grid-row: 3;
+    background-image: url(../images/NY.jpg);
+}
+#tokio_info{
+    grid-column: 3;
+    grid-row: 3;
+    background-image: url(../images/Tokio.jpg);
+}
+#peru_info{
+    grid-column: 2;
+    grid-row: 4;
+    background-image: url(../images/Peru.jpg);
+}
+/*INFO. SOBRE LA EMPRESA*/
+aside {
     text-align: justify;
     background-color: rgba(155, 243, 206, 0.48);
     left: 0;
     padding: 0 3.5em;
     grid-area: aside;
 }
-
-article { /**/
-    text-align: justify;
-    padding: 0 2.5em;
-    background-color: rgba(255, 230, 230, 0.67);
-    grid-area: article;
-}
-
-footer{ /**/
+/*INFO. DE LA CREADORA*/
+footer{ 
     text-align: center;
     background-color: rgba(235, 233, 133, 0.48);
+    font: 10 10px/1.3 'Berkshire Swash', "Sofia", sans-serif;
     font-weight: bold;
     grid-area: footer;
 }
