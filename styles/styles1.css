@@ -7,6 +7,7 @@ main {
         "footer footer footer";
     grid-template-columns: 1fr 3fr;
 }
+
 /*Organización de HEADER*/
 main > header {
     background-image: url(../images/Imaportada1.jpg);
@@ -24,6 +25,7 @@ header > p {
     font-size: 15px;
     text-shadow: 1px 1px 0px #2e1f1f, 4px 4px 0px rgba(0,0,0,0.15);
 }
+
 /*Organización de Barra principal*/
 nav {
     display:grid;
@@ -55,7 +57,8 @@ nav > div > ul > li {
     display: inline-block;
 }
 nav .barrnav ul>li:hover{ background:rgb(168, 202, 233); }
-/*Organización de ARCTICLE (con info de turismo)*/
+
+/*Organización de ARTICLE (con info de turismo)*/
 article {
     padding: 0 2.5em;
     background-color: rgba(255, 230, 230, 0.67);
@@ -115,6 +118,7 @@ ul.destinos > li:hover > a{
     grid-row: 4;
     background-image: url(../images/Peru.jpg);
 }
+
 /*INFO. SOBRE LA EMPRESA*/
 aside {
     text-align: justify;
@@ -123,6 +127,23 @@ aside {
     padding: 0 3.5em;
     grid-area: aside;
 }
+    /*Reducción de texto*/
+a#myButton0, a#myButton1 {
+    text-decoration: none;
+    color: red;
+}
+#open0, #open1 {
+    display: inline-block;
+    padding: 0px;
+}
+#mas0, #mas1 { display: none; }
+#cont0:target #mas0, #cont1:target #mas1 {
+    display: inline-block;
+    padding: 0px;
+    margin: 0;
+}
+#cont0:target #myButton0, #cont1:target #myButton1 { display: none; }
+
 /*INFO. DE LA CREADORA*/
 footer{ 
     text-align: center;
