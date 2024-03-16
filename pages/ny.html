@@ -6,29 +6,38 @@
         <title> NY (Travels Partners' site) </title>
         <link rel="stylesheet" href="../styles/styles2.css">
         <link rel="shortcut icon" href="../icons/icon1.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <style>
+            main > header { background-image: url(../images/NY_head.jpg); }
+        </style>
     </head>
     <body>
         <main>
             <header>
                 Nueva York, Estados Unidos
-                <br>
-                    <img src="../images/NY_head.jpg" height="auto" width="400" />
             </header>
             <nav>
-                Menú:
-                <br>
-                <ul>
-                    <li> <a href ="../index.html"> Página Principal (Travels Partners) </a> </li>
-                    <li> <a href ="bali.html"> Destino: Bali </a> </li>
-                    <li> <a href ="paris.html"> Destino: París </a> </li>
-                    <li> <a href ="tanzania.html"> Destino: Safari en el Serengeti </a> </li>
-                    <li> Destino: Nueva York </li>
-                    <li> <a href ="tokio.html"> Destino: Tokio </a> </li>
-                    <li> <a href ="peru.html"> Destino: Machu Picchu </a> </li>
+                <div class="logo"><strong>Menú:</strong></div>
+                <ul class="barrnav">
+                    <li> <a href ="../index.html"> Página Principal </a> </li>
+                    <li> <a href ="bali.html"> Bali </a> </li>
+                    <li> <a href ="paris.html"> París </a> </li>
+                    <li> <a href ="tanzania.html"> Safari en el Serengeti </a> </li>
+                    <li> <a href ="tokio.html"> Tokio </a> </li>
+                    <li> <a href ="peru.html"> Machu Picchu </a> </li>
                 </ul>
             </nav>
+            <aside>
+                <div class="logo"><strong>Ofrecemos:</strong></div>
+                <div class="barraside">
+                    <div><a href="#descripcion">¿Qué es Nueva York?</a></div>
+                    <div><a href="#atractivos">Atractivos del lugar</a></div>
+                    <div><a href="#itinerario">Ejemplo de itinerario</a></div>
+                    <div><a href="#costos">Costos generales</a></div>
+                </div>
+            </aside>
             <article>
-                <section>
+                <section id="descripcion">
                     <strong>Bienvenido a Nueva York, la ciudad que nunca duerme y el destino de tus sueños</strong>
                     <p>
                         En el corazón de Estados Unidos, se encuentra Nueva York, una metrópoli vibrante y dinámica
@@ -37,7 +46,7 @@
                         para todo tipo de viajeros.
                     </p>
                 </section>
-                <section>
+                <section id="atractivos">
                     <strong>Algunos sitios turisticos </strong>
                     <ul>
                         <li>
@@ -45,26 +54,26 @@
                             y visitados del mundo, el MET cuenta con una amplia colección de arte que abarca miles
                             de años y culturas.
                             <br>
-                            <iframe 
+                            <p style="text-align: center;"><iframe 
                                 width="560" height="315"
                                 src="https://www.youtube.com/embed/YQ0Q-iS9gUs?si=o6_ZnU0vsFwxmHl4"
                                 title="YouTube video player" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen>
-                            </iframe>
+                            </iframe></p>
                         </li>
                         <li>
                             <strong>Central Park: </strong>Este icónico parque urbano es un lugar popular para
                             pasear, hacer picnics, andar en bote y disfrutar de la naturaleza en el corazón de
                             Manhattan.
                             <br>
-                            <iframe
+                            <p style="text-align: center;"><iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.066203786246!2d-73.97019682320503!3d40.7825586700626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2589a018531e3%3A0xb9df1f7387a94119!2sCentral%20Park!5e0!3m2!1ses!2sco!4v1709413272978!5m2!1ses!2sco"
                                 width="600" height="450" style="border:0;"
                                 allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
+                            </iframe></p>
                         </li>
                         <li>
                             <a href="https://youtu.be/oY5PNOs85HY?si=buAT3eZQbk8vtgrX" target="_blank">Empire State Building: </a>
@@ -74,7 +83,7 @@
                             <strong>Estatua de la Libertad: </strong>Un símbolo icónico de la libertad y la democracia, la Estatua
                             de la Libertad es uno de los monumentos más famosos de Estados Unidos y se puede visitar en una
                             excursión en ferry a la isla de la Libertad.
-                            <figure>
+                            <figure style="text-align: center;">
                                 <img
                                 src="https://www.nationalgeographic.com.es/medio/2023/07/14/estatua-de-la-libertad_1193905f_1187183300_230714094659_1280x853.jpg"
                                 alt="La Estatua de la Libertad. Nueva York, Los Estados Unidos de America"
@@ -88,61 +97,81 @@
                         </li>
                     </ul>
                 </section>
-                <section>
+                <section id="itinerario">
                     <strong>Itinerario básico</strong>
                     <ul>
                         <li>
-                            Día 1: Llegada a Nueva York y Exploración de Midtown
-                            <ul>
-                                <li>Llegada a Nueva York y traslado al hotel.</li>
-                                <li>Exploración de Midtown Manhattan, incluyendo lugares emblemáticos como Times Square, el Rockefeller Center y la 5th Avenue.</li>
-                                <li>Almuerzo en un restaurante local.</li>
-                                <li>Visita al Museo de Arte Moderno (MoMA) o al Museo de Historia Natural (dependiendo de los intereses).</li>
-                                <li>Cena en un restaurante típico de Nueva York.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 1: Llegada a Nueva York y Exploración de Midtown</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>Llegada a Nueva York y traslado al hotel.</li>
+                                        <li>Exploración de Midtown Manhattan, incluyendo lugares emblemáticos como Times Square, el Rockefeller Center y la 5th Avenue.</li>
+                                        <li>Almuerzo en un restaurante local.</li>
+                                        <li>Visita al Museo de Arte Moderno (MoMA) o al Museo de Historia Natural (dependiendo de los intereses).</li>
+                                        <li>Cena en un restaurante típico de Nueva York.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                         <li>
-                            Día 2: Exploración de Lower Manhattan
-                            <ul>
-                                <li>Desayuno en una cafetería local.</li>
-                                <li>Paseo por el Financial District, visitando lugares como Wall Street, la Bolsa de Nueva York y el edificio One World Trade Center.</li>
-                                <li>Almuerzo en el mercado gastronómico de Brookfield Place.</li>
-                                <li>Visita al Monumento y Museo Nacional del 11 de septiembre (9/11 Memorial and Museum).</li>
-                                <li>Paseo por Battery Park y la Estatua de la Libertad (opcional).</li>
-                                <li>Cena en un restaurante con vista al río Hudson.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 2: Exploración de Lower Manhattan</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>Desayuno en una cafetería local.</li>
+                                        <li>Paseo por el Financial District, visitando lugares como Wall Street, la Bolsa de Nueva York y el edificio One World Trade Center.</li>
+                                        <li>Almuerzo en el mercado gastronómico de Brookfield Place.</li>
+                                        <li>Visita al Monumento y Museo Nacional del 11 de septiembre (9/11 Memorial and Museum).</li>
+                                        <li>Paseo por Battery Park y la Estatua de la Libertad (opcional).</li>
+                                        <li>Cena en un restaurante con vista al río Hudson.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                         <li>
-                            Día 3: Día en Central Park y Museos
-                            <ul>
-                                <li>Desayuno en una cafetería en Upper East Side.</li>
-                                <li>Visita al Central Park, incluyendo el Conservatory Garden, el Bow Bridge, el Lago y el Zoológico (opcional).</li>
-                                <li>Almuerzo en un restaurante cercano a Central Park.</li>
-                                <li>Visita al Museo Metropolitano de Arte (MET) o al Museo Guggenheim (dependiendo de los intereses).</li>
-                                <li>Cena en un restaurante en Upper West Side.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 3: Día en Central Park y Museos</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>Desayuno en una cafetería en Upper East Side.</li>
+                                        <li>Visita al Central Park, incluyendo el Conservatory Garden, el Bow Bridge, el Lago y el Zoológico (opcional).</li>
+                                        <li>Almuerzo en un restaurante cercano a Central Park.</li>
+                                        <li>Visita al Museo Metropolitano de Arte (MET) o al Museo Guggenheim (dependiendo de los intereses).</li>
+                                        <li>Cena en un restaurante en Upper West Side.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                         <li>
-                            Día 4: Día en Brooklyn y Williamsburg
-                            <ul>
-                                <li>Desayuno en una cafetería en Brooklyn Heights.</li>
-                                <li>Paseo por Brooklyn Heights y el Brooklyn Promenade.</li>
-                                <li>Almuerzo en un restaurante en DUMBO.</li>
-                                <li>Visita al Museo de Arte Contemporáneo (MOCA) o al Museo de Brooklyn (dependiendo de los intereses).</li>
-                                <li>Cena en un restaurante en Williamsburg.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 4: Día en Brooklyn y Williamsburg</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>Desayuno en una cafetería en Brooklyn Heights.</li>
+                                        <li>Paseo por Brooklyn Heights y el Brooklyn Promenade.</li>
+                                        <li>Almuerzo en un restaurante en DUMBO.</li>
+                                        <li>Visita al Museo de Arte Contemporáneo (MOCA) o al Museo de Brooklyn (dependiendo de los intereses).</li>
+                                        <li>Cena en un restaurante en Williamsburg.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                         <li>
-                            Día 5: Último Día y Despedida
-                            <ul>
-                                <li>Mañana libre para compras o relajación.</li>
-                                <li>Visita al High Line y al Chelsea Market.</li>
-                                <li>Traslado al aeropuerto y vuelo de regreso a casa.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 5: Último Día y Despedida</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>Mañana libre para compras o relajación.</li>
+                                        <li>Visita al High Line y al Chelsea Market.</li>
+                                        <li>Traslado al aeropuerto y vuelo de regreso a casa.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                     </ul>
                 </section>
-                <section>
+                <section id="costos">
                     <strong>Costos de viaje</strong>
                     <ol>
                         <li>

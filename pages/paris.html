@@ -6,29 +6,38 @@
         <title> París (Travels Partners' site) </title>
         <link rel="stylesheet" href="../styles/styles2.css">
         <link rel="shortcut icon" href="../icons/icon1.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <style>
+            main > header { background-image: url(../images/paris_head.jpg); }
+        </style>
     </head>
     <body>
         <main>
             <header>
                 París, Francia
-                <br>
-                    <img src="../images/paris_head.jpg" height="auto" width="400" />
             </header>
             <nav>
-                Menú:
-                <br>
-                <ul>
-                    <li> <a href ="../index.html"> Página Principal (Travels Partners) </a> </li>
-                    <li> <a href ="bali.html"> Destino: Bali </a> </li>
-                    <li> Destino: París </li>
-                    <li> <a href ="tanzania.html"> Destino: Safari en el Serengeti </a> </li>
-                    <li> <a href ="ny.html"> Destino: Nueva York </a> </li>
-                    <li> <a href ="tokio.html"> Destino: Tokio </a> </li>
-                    <li> <a href ="peru.html"> Destino: Machu Picchu </a> </li>
+                <div class="logo"><strong>Menú:</strong></div>
+                <ul class="barrnav">
+                    <li> <a href ="../index.html"> Página Principal </a> </li>
+                    <li> <a href ="bali.html"> Bali </a> </li>
+                    <li> <a href ="tanzania.html"> Safari en el Serengeti </a> </li>
+                    <li> <a href ="ny.html"> Nueva York </a> </li>
+                    <li> <a href ="tokio.html"> Tokio </a> </li>
+                    <li> <a href ="peru.html"> Machu Picchu </a> </li>
                 </ul>
             </nav>
+            <aside>
+                <div class="logo"><strong>Ofrecemos:</strong></div>
+                <div class="barraside">
+                    <div><a href="#descripcion">¿Qué es París?</a></div>
+                    <div><a href="#atractivos">Atractivos del lugar</a></div>
+                    <div><a href="#itinerario">Ejemplo de itinerario</a></div>
+                    <div><a href="#costos">Costos generales</a></div>
+                </div>
+            </aside>
             <article>
-                <section>
+                <section id="descripcion">
                     <strong>Bienvenido a París, la ciudad del amor, la luz y la historia</strong>
                     <p>
                         En el corazón de Francia, a orillas del río Sena, se encuentra París,
@@ -38,29 +47,29 @@
                         romance.
                     </p>
                 </section>
-                <section>
+                <section id="atractivos">
                     <strong>Algunos sitios turisticos </strong>
                     <ul>
                         <li>
                             <strong>Torre Eiffel: </strong>Uno de los monumentos más famosos del mundo,
                             ofrece impresionantes vistas de la ciudad desde lo alto de sus torres.
                             <br>
-                            <iframe 
+                            <p style="text-align: center;"><iframe 
                                 width="560" height="315"
                                 src="https://www.youtube.com/embed/Y31SKaentVQ?si=7xe6i2gjMvlD2HDR"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 allowfullscreen>
-                            </iframe>
+                            </iframe></p>
                         </li>
                         <li>
                             <strong>Jardines de Luxemburgo: </strong>Un parque público y jardín en el
                             corazón de París, conocido por sus hermosos parterres de flores y estanques.
                             <br>
-                            <iframe
+                            <p style="text-align: center;"><iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.60805697245!2d2.3337559764637232!3d48.846614371330574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671db36de687b%3A0x791dd61b089f98b!2sJardines%20de%20Luxemburgo!5e0!3m2!1ses!2sco!4v1709410136479!5m2!1ses!2sco"
                                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
+                            </iframe></p>
                         </li>
                         <li>
                             <a href="https://youtu.be/KYz2qtXn0Q8?si=PcDbFu9YG_CY5vLQ" target="_blank"> Arco del Triunfo: </a> Un monumento icónico
@@ -71,7 +80,7 @@
                             <strong>Palacio de Versalles: </strong>Ubicado a las afueras de París, es uno
                             de los palacios más grandes del mundo y un ejemplo impresionante de la
                             arquitectura barroca francesa.
-                            <figure>
+                            <figure style="text-align: center;">
                                 <img
                                 src="https://www.eluniversal.com.mx/resizer/B8V69tna68-M01ll_JTnpsZkR1c=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/XYMAQXIUHZEX3IQ4GLLAJPNU2Q.jpg"
                                 alt="Palacio de Versalles. PAris, Francia."
@@ -85,88 +94,108 @@
                         </li>
                     </ul>
                 </section>
-                <section>
+                <section id="itinerario">
                     <strong>Itinerario básico</strong>
                     <ul>
                         <li>
-                            Día 1:  Llegada y Recorrido Introductorio
-                            <ul>
-                                <li>Llegada a París y traslado al hotel.</li>
-                                <li>
-                                    Recorrido introductorio por el centro de la ciudad, visitando
-                                    lugares emblemáticos como la Torre Eiffel, el Arco de Triunfo
-                                    y los Campos Elíseos.
-                                </li>
-                                <li>
-                                    Visita a la Catedral de Notre Dame o al Museo del Louvre
-                                    (dependiendo del horario de llegada).
-                                </li>
-                                <li>Cena en un restaurante local.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 1:  Llegada y Recorrido Introductorio</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>Llegada a París y traslado al hotel.</li>
+                                        <li>
+                                            Recorrido introductorio por el centro de la ciudad, visitando
+                                            lugares emblemáticos como la Torre Eiffel, el Arco de Triunfo
+                                            y los Campos Elíseos.
+                                        </li>
+                                        <li>
+                                            Visita a la Catedral de Notre Dame o al Museo del Louvre
+                                            (dependiendo del horario de llegada).
+                                        </li>
+                                        <li>Cena en un restaurante local.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                         <li>
-                            Día 2: Exploración del Barrio de Montmartre y Museos
-                            <ul>
-                                <li>
-                                    Visita a la Basílica del Sagrado Corazón en Montmartre
-                                    y paseo por sus calles pintorescas.
-                                </li>
-                                <li>
-                                    Exploración del Museo d'Orsay, hogar de una vasta
-                                    colección de arte impresionista y post-impresionista.
-                                </li>
-                                <li>Almuerzo en un café parisino.</li>
-                                <li>
-                                    Visita al Museo de l'Orangerie para admirar las
-                                    famosas Nenúfares de Monet.
-                                </li>
-                                <li>Cena en un restaurante local o cena en crucero por el río Sena.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 2: Exploración del Barrio de Montmartre y Museos</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>
+                                            Visita a la Basílica del Sagrado Corazón en Montmartre
+                                            y paseo por sus calles pintorescas.
+                                        </li>
+                                        <li>
+                                            Exploración del Museo d'Orsay, hogar de una vasta
+                                            colección de arte impresionista y post-impresionista.
+                                        </li>
+                                        <li>Almuerzo en un café parisino.</li>
+                                        <li>
+                                            Visita al Museo de l'Orangerie para admirar las
+                                            famosas Nenúfares de Monet.
+                                        </li>
+                                        <li>Cena en un restaurante local o cena en crucero por el río Sena.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                         <li>
-                            Día 3: Día en Versalles
-                            <ul>
-                                <li>
-                                    Excursión de día completo al Palacio de Versalles, incluyendo
-                                    el Palacio, los jardines y el Gran Trianón.
-                                </li>
-                                <li>Almuerzo en un restaurante en los jardines de Versalles.</li>
-                                <li>Regreso a París y cena en un restaurante típico francés.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 3: Día en Versalles</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>
+                                            Excursión de día completo al Palacio de Versalles, incluyendo
+                                            el Palacio, los jardines y el Gran Trianón.
+                                        </li>
+                                        <li>Almuerzo en un restaurante en los jardines de Versalles.</li>
+                                        <li>Regreso a París y cena en un restaurante típico francés.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                         <li>
-                            Día 4: Día en el Barrio Latino y el Marais
-                            <ul>
-                                <li>
-                                    Exploración del Barrio Latino y visita a la famosa
-                                    Universidad de la Sorbona.
-                                </li>
-                                <li>Almuerzo en un bistró típico del Barrio Latino.</li>
-                                <li>
-                                    Visita al Centro Pompidou, un museo de arte
-                                    moderno y contemporáneo.
-                                </li>
-                                <li>
-                                    Exploración del Marais, con sus calles medievales
-                                    y boutiques de moda.
-                                </li>
-                                <li>Cena en un restaurante local.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 4: Día en el Barrio Latino y el Marais</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>
+                                            Exploración del Barrio Latino y visita a la famosa
+                                            Universidad de la Sorbona.
+                                        </li>
+                                        <li>Almuerzo en un bistró típico del Barrio Latino.</li>
+                                        <li>
+                                            Visita al Centro Pompidou, un museo de arte
+                                            moderno y contemporáneo.
+                                        </li>
+                                        <li>
+                                            Exploración del Marais, con sus calles medievales
+                                            y boutiques de moda.
+                                        </li>
+                                        <li>Cena en un restaurante local.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                         <li>
-                            Día 5: Último Día y Despedida
-                            <ul>
-                                <li>Mañana libre para compras o relajación.</li>
-                                <li>
-                                    Visita a la Sainte-Chapelle, una impresionante
-                                    capilla gótica con vidrieras.
-                                </li>
-                                <li>Traslado al aeropuerto y vuelo de regreso a casa.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 5: Último Día y Despedida</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>Mañana libre para compras o relajación.</li>
+                                        <li>
+                                            Visita a la Sainte-Chapelle, una impresionante
+                                            capilla gótica con vidrieras.
+                                        </li>
+                                        <li>Traslado al aeropuerto y vuelo de regreso a casa.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                     </ul>
                 </section>
-                <section>
+                <section id="costos">
                     <strong>Costos de viaje</strong>
                     <ol>
                         <li>

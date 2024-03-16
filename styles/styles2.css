@@ -1,42 +1,125 @@
 main {
     display: grid;
     grid-template-areas:
-        "header header"
-        "nav nav"
-        "aside article"
-        "footer footer";
-    grid-template-columns: 0fr 3fr;
+        "header"
+        "nav"
+        "article"
+        "footer";
+    grid-template-columns: 1fr;
 }
 
-header { /**/
+/*Organización de HEADER*/
+main > header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
-    background-color: rgba(173, 213, 240, 0.67);
-    font-size: 70px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: italic;
-    font-weight: bold;
+    font: 100 70px/1.3 'Berkshire Swash', "Sofia", sans-serif;
+    color: black;
+    text-shadow: 1px 1px 0px #2e1f1f, 4px 4px 0px rgba(0,0,0,0.15);
+    padding: 120px;
     grid-area: header;
 }
-
-nav { /**/
-    text-align: justify;
-    background-color: rgba(200, 217, 253, 0.664);
+header > p {
     font-size: 15px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    grid-area: nav;
+    text-shadow: 1px 1px 0px #2e1f1f, 4px 4px 0px rgba(0,0,0,0.15);
 }
 
-article { /**/
+/*Organización de Barra principal*/
+nav {
+    display:grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background: aliceblue;
+    opacity: 0.8;
+    font-family: serif;
+    font-size: 14px;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+nav.logo{
+    font-size: 16px;
+    margin-left: 10px;
+}
+ul.barrnav{ margin-right: 5px; }
+ul.barrnav > li > a{
+    text-decoration: none;
+    margin: 10px;
+}
+ul.barrnav{
+    grid-template-columns: repeat(6,auto);
+    margin-right: 10px;
+}
+ul.barrnav > li {
+    list-style-type: none;
+    display: inline-block;
+}
+ul.barrnav>li:hover{ background:rgb(168, 202, 233); }
+
+/*Organización de Barra auxiliar*/
+aside{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    background: aliceblue;
+    opacity: 0.7;
+    font-family: serif;
+    font-size: 14px;
+    position:fixed;
+    top:35%;
+    width:20%;
+    padding: 10px;
+ }
+aside .logo{
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 10px;
+}
+aside .barraside > div{ padding: 2px; }
+aside .barraside > div > a{ text-decoration: none; }
+aside .barraside > div > a:hover{ background:rgb(168, 202, 233); }
+
+/*Organización de Contenido*/
+article {
     text-align: justify;
-    padding: 0 2.5em;
+    padding: 0 2em;
     background-color: rgba(255, 230, 230, 0.67);
     grid-area: article;
 }
+        /*centrar sub-titulos*/
+article > section > strong:first-child{ 
+    display:grid;
+    text-align: center;
+    font: 50 20px/1.3 'Berkshire Swash', "Sofia", sans-serif;
+    color: rgb(223, 21, 179);
+}
+        /*click en itinerario*/
+section#itinerario > ul > li {
+    list-style-type: none;
+    text-align: center;
+}
+.oculto{ display: none; }
+div.dia:active>span{ display: block; }
+div.dia:hover{ cursor: pointer; }
+        /*costos*/
+section#costos > ol > li{
+    list-style-type: none;
+    font-weight: bold;
+    font-family: serif;
+    text-align: center;
+}
+section#costos > ol > li > ul{
+    text-align: justify;
+    font-weight: lighter;
+}
 
-footer{ /**/
+/*INFO. DE LA CREADORA*/
+footer{ 
     text-align: center;
     background-color: rgba(235, 233, 133, 0.48);
+    font: 10 10px/1.3 'Berkshire Swash', "Sofia", sans-serif;
     font-weight: bold;
     grid-area: footer;
 }

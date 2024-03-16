@@ -6,29 +6,38 @@
         <title> Machu Picchu (Travels Partners' site) </title>
         <link rel="stylesheet" href="../styles/styles2.css">
         <link rel="shortcut icon" href="../icons/icon1.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <style>
+            main > header { background-image: url(../images/peru_head.jpg); }
+        </style>
     </head>
     <body>
         <main>
             <header>
                 Machu Picchu, Perú
-                <br>
-                    <img src="../images/peru_head.jpg" height="auto" width="400" />
             </header>
             <nav>
-                Menú:
-                <br>
-                <ul>
-                    <li> <a href ="../index.html"> Página Principal (Travels Partners) </a> </li>
-                    <li> <a href ="bali.html"> Destino: Bali </a> </li>
-                    <li> <a href ="paris.html"> Destino: París </a> </li>
-                    <li> <a href ="tanzania.html"> Destino: Safari en el Serengeti </a> </li>
-                    <li> <a href ="ny.html"> Destino: Nueva York </a> </li>
-                    <li> <a href ="tokio.html"> Destino: Tokio </a> </li>
-                    <li> Destino: Machu Picchu </li>
+                <div class="logo"><strong>Menú:</strong></div>
+                <ul class="barrnav">
+                    <li> <a href ="../index.html"> Página Principal </a> </li>
+                    <li> <a href ="bali.html"> Bali </a> </li>
+                    <li> <a href ="paris.html"> París </a> </li>
+                    <li> <a href ="tanzania.html"> Safari en el Serengeti </a> </li>
+                    <li> <a href ="ny.html"> Nueva York </a> </li>
+                    <li> <a href ="tokio.html"> Tokio </a> </li>
                 </ul>
             </nav>
+            <aside>
+                <div class="logo"><strong>Ofrecemos:</strong></div>
+                <div class="barraside">
+                    <div><a href="#descripcion">¿Qué es Machu Picchu?</a></div>
+                    <div><a href="#atractivos">Atractivos del lugar</a></div>
+                    <div><a href="#itinerario">Ejemplo de itinerario</a></div>
+                    <div><a href="#costos">Costos generales</a></div>
+                </div>
+            </aside>
             <article>
-                <section>
+                <section id="descripcion">
                     <strong>
                         Machu Picchu: Descubre el misterio de la Ciudad Perdida de los Incas</strong>
                     <p>
@@ -38,7 +47,7 @@
                         de la ingeniería y espiritualidad de esta antigua civilización.
                     </p>
                 </section>
-                <section>
+                <section id="atractivos">
                     <strong>Algunos sitios turisticos </strong>
                     <ul>
                         <li>
@@ -47,26 +56,26 @@
                             Construida en el siglo XV, es un impresionante ejemplo de la arquitectura
                             y la ingeniería inca.
                             <br>
-                            <iframe 
+                            <p style="text-align: center;"><iframe 
                                 width="560" height="315" 
                                 src="https://www.youtube.com/embed/DzoMTIbaMfs?si=ffGjq60_yaXukBN7"
                                 title="YouTube video player"
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen>
-                            </iframe>
+                            </iframe></p>
                         </li>
                         <li>
                             <strong>Templo del Cóndor: </strong>Un templo dedicado al cóndor, uno de los
                             animales más sagrados para los incas. Está construido en la forma de un
                             cóndor en vuelo.
                             <br>
-                            <iframe 
+                            <p style="text-align: center;"><iframe 
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.9808340770132!2d-72.54708532492023!3d-13.163608387169702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916d9a5fefb6481f%3A0xba721ee5929059eb!2sTemplo%20del%20Condor%2C%20Cam.%20Inca%2C%2008680%2C%20Per%C3%BA!5e0!3m2!1ses!2sco!4v1709417954554!5m2!1ses!2sco"
                                 width="600" height="450" style="border:0;"
                                 allowfullscreen="" loading="lazy" 
                                 referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
+                            </iframe></p>
                         </li>
                         <li>
                             <a href="https://youtu.be/Gul6sInG0fk?si=aI2YPZ61Yn1BcWqt" target="_blank">Templo del Sol: </a>
@@ -77,7 +86,7 @@
                             <strong>Aguas Calientes: </strong>El pueblo de Aguas Calientes, también conocido como Machu
                             Picchu Pueblo, es la puerta de entrada a Machu Picchu. Es un lugar encantador con aguas termales,
                             restaurantes y mercados de artesanías.
-                            <figure>
+                            <figure style="text-align: center;">
                                 <img
                                 src="https://picchutravel.com/wp-content/uploads/que-hacer-en-aguas-calientes-cusco.jpg"
                                 alt="El pueblo de Aguas Calientes. Machu Picchu, Perú"
@@ -91,59 +100,79 @@
                         </li>
                     </ul>
                 </section>
-                <section>
+                <section id="itinerario">
                     <strong>Itinerario básico</strong>
                     <ul>
                         <li>
-                            Día 1: Llegada a Cusco y Visita a la Ciudad
-                            <ul>
-                                <li>Llegada al aeropuerto de Cusco y traslado al hotel.</li>
-                                <li>Restauración y descanso.</li>
-                                <li>Tour por la ciudad de Cusco, incluyendo la Plaza de Armas, la Catedral de Cusco y el Templo del Sol (Qorikancha).</li>
-                                <li>Cena en un restaurante local.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 1: Llegada a Cusco y Visita a la Ciudad</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>Llegada al aeropuerto de Cusco y traslado al hotel.</li>
+                                        <li>Restauración y descanso.</li>
+                                        <li>Tour por la ciudad de Cusco, incluyendo la Plaza de Armas, la Catedral de Cusco y el Templo del Sol (Qorikancha).</li>
+                                        <li>Cena en un restaurante local.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                         <li>
-                            Día 2: Valle Sagrado de los Incas
-                            <ul>
-                                <li>Desayuno temprano y salida hacia el Valle Sagrado de los Incas.</li>
-                                <li>Visita a las ruinas de Pisac y su mercado artesanal.</li>
-                                <li>Almuerzo en un restaurante local.</li>
-                                <li>Visita a las ruinas de Ollantaytambo y el templo del sol.</li>
-                                <li>Cena en un restaurante en Ollantaytambo.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 2: Valle Sagrado de los Incas</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>Desayuno temprano y salida hacia el Valle Sagrado de los Incas.</li>
+                                        <li>Visita a las ruinas de Pisac y su mercado artesanal.</li>
+                                        <li>Almuerzo en un restaurante local.</li>
+                                        <li>Visita a las ruinas de Ollantaytambo y el templo del sol.</li>
+                                        <li>Cena en un restaurante en Ollantaytambo.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                         <li>
-                            Día 3: Excursión a Machu Picchu
-                            <ul>
-                                <li>Desayuno temprano y traslado a la estación de tren de Ollantaytambo.</li>
-                                <li>Viaje en tren a Aguas Calientes.</li>
-                                <li>Traslado en autobús a Machu Picchu.</li>
-                                <li>Visita guiada a Machu Picchu, incluyendo el Templo del Sol, el Templo de las Tres Ventanas, el Intihuatana y la Plaza Principal.</li>
-                                <li>Almuerzo en un restaurante en Aguas Calientes.</li>
-                                <li>Tiempo libre para explorar Aguas Calientes y sus aguas termales.</li>
-                                <li>Cena en un restaurante en Aguas Calientes.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 3: Excursión a Machu Picchu</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>Desayuno temprano y traslado a la estación de tren de Ollantaytambo.</li>
+                                        <li>Viaje en tren a Aguas Calientes.</li>
+                                        <li>Traslado en autobús a Machu Picchu.</li>
+                                        <li>Visita guiada a Machu Picchu, incluyendo el Templo del Sol, el Templo de las Tres Ventanas, el Intihuatana y la Plaza Principal.</li>
+                                        <li>Almuerzo en un restaurante en Aguas Calientes.</li>
+                                        <li>Tiempo libre para explorar Aguas Calientes y sus aguas termales.</li>
+                                        <li>Cena en un restaurante en Aguas Calientes.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                         <li>
-                            Día 4: Montaña Machu Picchu o Huayna Picchu
-                            <ul>
-                                <li>Desayuno temprano y ascenso a la Montaña Machu Picchu o la Montaña Huayna Picchu (según disponibilidad y reserva previa).</li>
-                                <li>Descenso y almuerzo en un restaurante en Aguas Calientes.</li>
-                                <li>Regreso en tren a Ollantaytambo y traslado a Cusco.</li>
-                                <li>Cena en un restaurante local en Cusco.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 4: Montaña Machu Picchu o Huayna Picchu</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>Desayuno temprano y ascenso a la Montaña Machu Picchu o la Montaña Huayna Picchu (según disponibilidad y reserva previa).</li>
+                                        <li>Descenso y almuerzo en un restaurante en Aguas Calientes.</li>
+                                        <li>Regreso en tren a Ollantaytambo y traslado a Cusco.</li>
+                                        <li>Cena en un restaurante local en Cusco.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                         <li>
-                            Día 5: Último Día y Despedida
-                            <ul>
-                                <li>Desayuno en el hotel y tiempo libre para compras o visitas adicionales en Cusco.</li>
-                                <li>Traslado al aeropuerto de Cusco y vuelo de regreso a casa.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 5: Último Día y Despedida</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>Desayuno en el hotel y tiempo libre para compras o visitas adicionales en Cusco.</li>
+                                        <li>Traslado al aeropuerto de Cusco y vuelo de regreso a casa.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                     </ul>
                 </section>
-                <section>
+                <section id="costos">
                     <strong>Costos de viaje</strong>
                     <ol>
                         <li>

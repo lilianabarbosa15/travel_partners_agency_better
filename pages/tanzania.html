@@ -6,29 +6,38 @@
         <title> Safari en el Serengeti (Travels Partners' site) </title>
         <link rel="stylesheet" href="../styles/styles2.css">
         <link rel="shortcut icon" href="../icons/icon1.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <style>
+            main > header { background-image: url(../images/tanzania_head.jpg); }
+        </style>
     </head>
     <body>
         <main>
             <header>
                 Safari en el Serengeti, Tanzania
-                <br>
-                    <img src="../images/tanzania_head.jpg" height="auto" width="400" />
             </header>
             <nav>
-                Menú:
-                <br>
-                <ul>
-                    <li> <a href ="../index.html"> Página Principal (Travels Partners) </a> </li>
-                    <li> <a href ="bali.html"> Destino: Bali </a> </li>
-                    <li> <a href ="paris.html"> Destino: París </a> </li>
-                    <li> Destino: Safari en el Serengeti </li>
-                    <li> <a href ="ny.html"> Destino: Nueva York </a> </li>
-                    <li> <a href ="tokio.html"> Destino: Tokio </a> </li>
-                    <li> <a href ="peru.html"> Destino: Machu Picchu </a> </li>
+                <div class="logo"><strong>Menú:</strong></div>
+                <ul class="barrnav">
+                    <li> <a href ="../index.html"> Página Principal </a> </li>
+                    <li> <a href ="bali.html"> Bali </a> </li>
+                    <li> <a href ="paris.html"> París </a> </li>
+                    <li> <a href ="ny.html"> Nueva York </a> </li>
+                    <li> <a href ="tokio.html"> Tokio </a> </li>
+                    <li> <a href ="peru.html"> Machu Picchu </a> </li>
                 </ul>
             </nav>
+            <aside>
+                <div class="logo"><strong>Ofrecemos:</strong></div>
+                <div class="barraside">
+                    <div><a href="#descripcion">¿Qué es Safari en el Serengeti?</a></div>
+                    <div><a href="#atractivos">Atractivos del lugar</a></div>
+                    <div><a href="#itinerario">Ejemplo de itinerario</a></div>
+                    <div><a href="#costos">Costos generales</a></div>
+                </div>
+            </aside>
             <article>
-                <section>
+                <section id="descripcion">
                     <strong>Descubre el Esplendor del Serengeti, Tanzania</strong>
                     <p>
                         Bienvenido al Serengeti, una joya africana que cautiva los corazones de los aventureros de todo
@@ -36,7 +45,7 @@
                         nacional es un destino imprescindible para aquellos que buscan una experiencia de safari auténtica.
                     </p>
                 </section>
-                <section>
+                <section id="atractivos">
                     <strong>Algunos sitios turisticos </strong>
                     <ul>
                         <li>
@@ -44,24 +53,24 @@
                             un fenómeno natural que involucra a millones de ñus y cebras que viajan a través del parque
                             en busca de pastos frescos.
                             <br>
-                            <iframe 
+                            <p style="text-align: center;"><iframe 
                                 width="560" height="315" 
                                 src="https://www.youtube.com/embed/d6jyGQ8OQg0?si=0XeJqAlczn6L-6gw"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen>
-                            </iframe>
+                            </iframe></p>
                         </li>
                         <li>
                             <strong>Museo Olduvai Gorge: </strong>Ubicado en las afueras del Serengeti, este museo exhibe
                             fósiles de homínidos y herramientas de piedra que datan de hace más de 2 millones de años.
                             <br>
-                            <iframe
+                            <p style="text-align: center;"><iframe
                                 src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31874.223185285195!2d35.33298140436963!3d-3.0198319051849745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMuseo%20Olduvai%20Gorge!5e0!3m2!1ses!2sco!4v1709411506720!5m2!1ses!2sco"
                                 width="600" height="450" style="border:0;"
                                 allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
+                            </iframe></p>
                         </li>
                         <li>
                             <a href="https://youtu.be/kLZNCM-HmUM?si=qITyD24sJhyeX5a1" target="_blank">Cultura Masai: </a>Visita a
@@ -70,7 +79,7 @@
                         <li>
                             <strong>Río Grumeti: </strong>l río Grumeti es una de las principales fuentes de agua del
                             Serengeti y es el lugar ideal para ver cocodrilos, hipopótamos y una variedad de aves acuáticas.
-                            <figure>
+                            <figure style="text-align: center;">
                                 <img
                                 src="https://www.andbeyond.com/wp-content/uploads/sites/5/Tanzania-Grumeti-Serengeti-River-Lodge-Guest-Area-exterior-view-with-hippo-pod-in-river_2.jpg"
                                 alt="Río Grumeti. Serengeti, Tanzania."
@@ -84,70 +93,90 @@
                         </li>
                     </ul>
                 </section>
-                <section>
+                <section id="itinerario">
                     <strong>Itinerario básico</strong>
                     <ul>
                         <li>
-                            Día 1: Llegada a Arusha y Traslado al Serengeti
-                            <ul>
-                                <li>Llegada al aeropuerto internacional de Kilimanjaro en Arusha.</li>
-                                <li>Traslado al Serengeti, uno de los parques nacionales más famosos de África.</li>
-                                <li>Almuerzo en ruta y safari por la tarde en la región central del Serengeti.</li>
-                                <li>Cena y alojamiento en un campamento de safari o en un lodge de lujo.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 1: Llegada a Arusha y Traslado al Serengeti</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>Llegada al aeropuerto internacional de Kilimanjaro en Arusha.</li>
+                                        <li>Traslado al Serengeti, uno de los parques nacionales más famosos de África.</li>
+                                        <li>Almuerzo en ruta y safari por la tarde en la región central del Serengeti.</li>
+                                        <li>Cena y alojamiento en un campamento de safari o en un lodge de lujo.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                         <li>
-                            Día 2: Safari en el Serengeti
-                            <ul>
-                                <li>
-                                    Desayuno temprano y salida para un safari de día completo en la región
-                                    central del Serengeti.
-                                </li>
-                                <li>
-                                    Observación de la vida silvestre en su hábitat natural, incluyendo
-                                    leones, elefantes, jirafas, cebras, ñus y más.
-                                </li>
-                                <li>Almuerzo de picnic en el parque.</li>
-                                <li>Regreso al campamento o lodge para la cena y el alojamiento.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 2: Safari en el Serengeti</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>
+                                            Desayuno temprano y salida para un safari de día completo en la región
+                                            central del Serengeti.
+                                        </li>
+                                        <li>
+                                            Observación de la vida silvestre en su hábitat natural, incluyendo
+                                            leones, elefantes, jirafas, cebras, ñus y más.
+                                        </li>
+                                        <li>Almuerzo de picnic en el parque.</li>
+                                        <li>Regreso al campamento o lodge para la cena y el alojamiento.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                         <li>
-                            Día 3: Safari en el Serengeti
-                            <ul>
-                                <li>Desayuno temprano y safari matutino en la región central del Serengeti.</li>
-                                <li>
-                                    Visita a los ríos Grumeti o Mara, donde se puede ver la migración
-                                    anual de ñus y cebras (dependiendo de la época del año).
-                                </li>
-                                <li>Almuerzo de picnic en el parque.</li>
-                                <li>Regreso al campamento o lodge para la cena y el alojamiento.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 3: Safari en el Serengeti</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>Desayuno temprano y safari matutino en la región central del Serengeti.</li>
+                                        <li>
+                                            Visita a los ríos Grumeti o Mara, donde se puede ver la migración
+                                            anual de ñus y cebras (dependiendo de la época del año).
+                                        </li>
+                                        <li>Almuerzo de picnic en el parque.</li>
+                                        <li>Regreso al campamento o lodge para la cena y el alojamiento.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                         <li>
-                            Día 4: Safari en el Serengeti
-                            <ul>
-                                <li>Desayuno temprano y safari matutino en la región central o sur del Serengeti.</li>
-                                <li>
-                                    Visita a la región sur del parque, donde se pueden ver depredadores como
-                                    leones, leopardos y guepardos.
-                                </li>
-                                <li>Almuerzo de picnic en el parque.</li>
-                                <li>Regreso al campamento o lodge para la cena y el alojamiento.</li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 4: Safari en el Serengeti</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>Desayuno temprano y safari matutino en la región central o sur del Serengeti.</li>
+                                        <li>
+                                            Visita a la región sur del parque, donde se pueden ver depredadores como
+                                            leones, leopardos y guepardos.
+                                        </li>
+                                        <li>Almuerzo de picnic en el parque.</li>
+                                        <li>Regreso al campamento o lodge para la cena y el alojamiento.</li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                         <li>
-                            Día 5: Regreso a Arusha y Despedida
-                            <ul>
-                                <li>Desayuno temprano y safari matutino en ruta a Arusha.</li>
-                                <li>
-                                    Almuerzo en Arusha y traslado al aeropuerto internacional de Kilimanjaro
-                                    para el vuelo de regreso.
-                                </li>
-                            </ul>
+                            <div class ="dia">
+                                <strong>Día 5: Regreso a Arusha y Despedida</strong>
+                                <span class="oculto">
+                                    <ul>
+                                        <li>Desayuno temprano y safari matutino en ruta a Arusha.</li>
+                                        <li>
+                                            Almuerzo en Arusha y traslado al aeropuerto internacional de Kilimanjaro
+                                            para el vuelo de regreso.
+                                        </li>
+                                    </ul>
+                                </span>
+                            </div>
                         </li>
                     </ul>
                 </section>
-                <section>
+                <section id="costos">
                     <strong>Costos de viaje</strong>
                     <ol>
                         <li>
